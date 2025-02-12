@@ -35,12 +35,13 @@ variable "sample_list" {
 # We have a dictionary (or map), Meaning single variable will have multiple values, & Each value is going to have a sapperate name.
 
 variable "sample_dict" {
-    default {
-    number1 = 100
-    string1 = "hello"
-    number2 = 123
-    boolean = true
-   }
+    default = {
+        number1 = 100
+        string1 = "hello"
+        number2 = 123
+        boolean = true
+    }
 }
+
 
 ## this is most preffered variable over the list when we declare the data.
