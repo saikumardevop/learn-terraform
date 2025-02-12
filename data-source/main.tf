@@ -17,7 +17,6 @@ output "launch-wizard-1-sg" {
   value = data.aws_security_group.selected
 }
 
-
 output "single" {
   value = data.aws_security_group.single
 }
