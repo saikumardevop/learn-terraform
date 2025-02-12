@@ -9,8 +9,8 @@ output "security_group_id" {
 //data "aws_security_group" "selected" {}
 //
 //data "aws_security_group" "single" {
-//  count = length(data.aws_security_group.selected)
-//  id = data.aws_security_group.selected[count.index]
+//  count = length(data.aws_security_group.selected.ids)
+//  id = data.aws_security_group.selected.ids[count.index]
 //}
 //
 //output "launch-wizard-1-sg" {
