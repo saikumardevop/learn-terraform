@@ -1,5 +1,5 @@
-data "aws_security_group" "selected"{
-  name = "allow-all"
+data "aws_security_group" "selected" {
+  name = var."launch-wizard-1"
 }
 
 output "security_group_id" {
