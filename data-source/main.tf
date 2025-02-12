@@ -3,7 +3,7 @@ data "aws_security_group" "selected" {
 }
 
 output "security_group_id" {
-  value = coalesce(data.aws_security_group.selected)
+  value = data.aws_security_group.selected
 }
 
 //data "aws_security_group" "selected" {}
