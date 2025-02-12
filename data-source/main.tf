@@ -13,7 +13,7 @@ data "aws_security_group" "single" {
   id = data.aws_security_group.selected[count.index]
 }
 
-output "launch-wizard-1_sg" {
+output "launch-wizard-1-sg" {
   value = data.aws_security_group.selected
 }
 
