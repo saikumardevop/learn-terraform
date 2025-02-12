@@ -13,7 +13,7 @@ output "sample_string1" {
 ## Value from list
 # Second value in list
 output "simple_list_2" {
-    value " var.sample_list_[1]"
+    value = " var.sample_list_[1]"
 }
 
 # Print number1 in simple_dict

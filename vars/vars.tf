@@ -30,7 +30,7 @@ variable "sample_list" {
     ]
 }
 
-Data type inside the list does not matter in terraform
+# Data type inside the list does not matter in terraform
 
 # We have a dictionary (or map), Meaning single variable will have multiple values, & Each value is going to have a sapperate name.
 
@@ -42,3 +42,5 @@ variable "sample_dict" {
     boolean = true
    }
 }
+
+## this is most preffered variable over the list when we declare the data.
