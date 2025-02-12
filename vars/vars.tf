@@ -43,5 +43,7 @@ variable "sample_dict" {
     }
 }
 
-
 ## this is most preffered variable over the list when we declare the data.
+
+variable "env" {}
+variable "auto_num1" {}
