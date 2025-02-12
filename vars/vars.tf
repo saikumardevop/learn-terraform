@@ -29,3 +29,16 @@ variable "sample_list" {
         123
     ]
 }
+
+Data type inside the list does not matter in terraform
+
+# We have a dictionary (or map), Meaning single variable will have multiple values, & Each value is going to have a sapperate name.
+
+variable "sample_dict" {
+    default =
+    number1 = 100
+    string1 = "hello"
+    number2 = 123
+    boolean = true
+   }
+}
