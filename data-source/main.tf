@@ -2,11 +2,11 @@ data "aws_security_group" "selected" {
   name = "launch-wizard-1"
 }
 
-output "security_group_id" {
-  value = coalesce(data.aws_security_group.selected.id)
-}
+# output "security_group_id" {
+#   value = coalesce(data.aws_security_group.selected.id)
+# }
 
-data "aws_security_group" "single" {}
+#data "aws_security_group" "single" {}
 
 # data"aws_security_group" "single" {
 #   count = length(data.aws_security_group.single)
@@ -18,5 +18,5 @@ data "aws_security_group" "single" {}
 # }
 
 output "single" {
-  value = data.aws_security_group.single
+  value = data.aws_security_group.selected
 }
