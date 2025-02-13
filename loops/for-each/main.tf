@@ -48,7 +48,7 @@ variable "fruits" {
 
 // For_each on a list
 variable "vegetables" {
-  default = ["carrot", capsicum]
+  default = ["carrot", "capsicum"]
 }
 
 resource "null_resource" "vegetables" {
