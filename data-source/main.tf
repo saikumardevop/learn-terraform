@@ -13,9 +13,9 @@ data "aws_security_group" "single" {}
 #   id = data.aws_security_group.single[count.index]
 # }
 
-# output "launch-wizard-1" {
-#   value = data.aws_security_group
-# }
+output "launch-wizard-1" {
+  value = data.aws_security_group
+}
 
 output "single" {
   value = data.aws_security_group.single
