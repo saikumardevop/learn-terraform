@@ -11,7 +11,7 @@ data "aws_security_group" "selected" {
 #  }
 
 data"aws_security_group" "single" {
-   count = length(data.aws_security_group.single)
+   count = length(data.aws_security_group.selected)
    id = data.aws_security_group.single[count.index]
  }
 
