@@ -44,3 +44,19 @@ variable "fruits" {
     banana = 100
   }
 }
+
+
+// For_each on a list
+variable "vegetables" {
+  default = ["carrot", capsicum]
+}
+
+resource "null_resource" "vegetables" {
+
+  for_each = toset(var.vegetables)
+
+  provisioner "local-exec" {
+    command = "echo Fruit Name - ${each.key}"
+  }
+
+}
