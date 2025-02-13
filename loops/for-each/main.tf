@@ -17,6 +17,7 @@ resource "null_resource" "fruits1" {
     command = "echo Fruit Name - ${each.key} - ${each.value["count"]}"
     //command = "echo ${length(var.fruits)}"
   }
+
 }
 
 variable "fruits1" {
