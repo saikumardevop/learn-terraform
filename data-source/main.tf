@@ -11,7 +11,7 @@ output "all_sg" {
 //data"aws_security_group" "single" {
  //  count = length(data.aws_security_group.selected)
 //   id = data.aws_security_group.single[count.index]
- }
+ #}
 
 # output "launch-wizard-1" {
 #   value = data.aws_security_group.single
