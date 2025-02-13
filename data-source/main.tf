@@ -1,6 +1,4 @@
-data "aws_security_groups" "selected" {
-
-}
+data "aws_security_groups" "selected" {}
 
  output "all_sg" {
    value = data.aws_security_groups.selected
@@ -22,3 +20,5 @@ data "aws_security_groups" "selected" {
 //output "single" {
 //  value = data.aws_security_group.selected
 //}
+
+
