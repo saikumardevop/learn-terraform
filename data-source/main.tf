@@ -1,6 +1,6 @@
 data "aws_security_groups" "selected" {}
 
- output "all_sg" {
+output "all_sg" {
    value = data.aws_security_groups.selected
 }
 
