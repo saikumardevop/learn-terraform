@@ -12,7 +12,12 @@ data "aws_security_group" "single" {
 }
 
 output "allllllll" {
-  value = "data.aws_security_groups.test"
+  value = data.aws_security_groups.test
+}
+
+output "single" {
+  value = data.aws_security_group.single
+
 }
 
 
