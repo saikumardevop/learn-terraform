@@ -4,21 +4,22 @@ output "all_sg" {
    value = data.aws_security_groups.selected
 }
 
-# data "aws_security_group" "single" {
-#  name = "launch-wizard-1"
-#  }
+data "aws_security_groups" "test" {
 
-//data"aws_security_group" "single" {
- //  count = length(data.aws_security_group.selected)
-//   id = data.aws_security_group.single[count.index]
- #}
+ }
 
-# output "launch-wizard-1" {
-#   value = data.aws_security_group.single
-# }
+data"aws_security_group" "single" {
+  count = length(data.aws_security_groups.test.ids)
+  id = data.aws_security_groups.test[count.index]
+ }
 
-//output "single" {
-//  value = data.aws_security_group.selected
-//}
+output "test" {
+  value = data.aws_security_groups.test
+}
+
+output "single" {
+ value = data.aws_security_group.single
+
+}
 
 
