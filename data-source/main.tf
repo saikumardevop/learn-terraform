@@ -18,7 +18,7 @@ output "test" {
 }
 
 output "single" {
- value = data.aws_security_group.single
+ value = data.aws_security_group.singl
 
 }
 
